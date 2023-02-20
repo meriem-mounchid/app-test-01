@@ -138,11 +138,11 @@ volumes:
     #   o: bind
     #   device: /home/ubuntu/data/mariadb_data
   wordpress_nginx:
-    # name: wordpress_nginx
-    # driver_opts:
-    #   type: none
-    #   o: bind
-    #   device: /home/ubuntu/data/wordpress_nginx
+    name: wordpress_nginx
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/ubuntu/data/wordpress_nginx
 
 #networks:
 #  mynetwork:

@@ -9,6 +9,6 @@ RUN rm -f /etc/nginx/sites-enabled/default
 COPY ./conf/nginx.conf /etc/nginx/sites-enabled/nginx.conf
 RUN ln -s /etc/nginx/sites-enabled/nginx.conf /etc/nginx/sites-available/nginx.conf
 
-EXPOSE 443
+EXPOSE 443 80
 
 CMD echo "Nginx is Running.." ; nginx -g 'daemon off;'

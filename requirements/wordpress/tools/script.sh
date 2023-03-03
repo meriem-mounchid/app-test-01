@@ -28,7 +28,8 @@ echo "---------"
 
 
 # wp post create --post_title='My ALB' --post_content="$IP_WP" --post_type=page --post_status=publish --allow-root
-# wp post create --post_title="My Server$Server" --post_content="*** $Server ***" --post_type=page --post_status=publish --allow-root
+wp post update 123 --post_content="Hello, world! ---- $Server ----"
+wp post create --post_title="My Server$Server" --post_content="*** $Server ***" --post_type=page --post_status=publish --allow-root
 
 # wp post update 1 --post_title='My Ip Address' --post_content="$IP_WP" --post_type=page --allow-root
 # --url="http://mmounchi.42.fr"

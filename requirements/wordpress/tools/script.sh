@@ -27,7 +27,7 @@ wp post list --format=ids --allow-root
 echo "---------"
 
 
-# wp post create --post_title='My ALB' --post_content="$IP_WP" --post_type=page --post_status=publish --allow-root
+wp post create --post_title='My DNS Name' --post_content="$IP_WP" --post_type=page --post_status=publish --allow-root
 # wp post create --post_title="My Server$Server" --post_content="*** $Server ***" --post_type=page --post_status=publish --allow-root
 
 # wp post update 1 --post_title='My Ip Address' --post_content="$IP_WP" --post_type=page --allow-root
